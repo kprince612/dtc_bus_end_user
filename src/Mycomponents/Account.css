@@ -256,7 +256,6 @@ li:hover {
     }
 
     nav ul {
-        flex-direction: column;
         align-items: center;
     }
 
