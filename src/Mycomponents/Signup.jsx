@@ -67,7 +67,7 @@ function Signup() {
         <input type="password" name='password' placeholder='enter password' onChange={handleChange}/>
 
         <button type='submit'>Register</button>
-        <span>Already have an account <a href="/login">login</a></span>
+        <span>Already have an account <Link to="/login"></Link></span>
         <br />
         <br />
         <span>Login for admin <Link to="/adminlogin">login for admin</Link></span>
