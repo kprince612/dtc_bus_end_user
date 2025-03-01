@@ -61,10 +61,10 @@ function Account() {
         <>
         <nav>
                 <ul>
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/about">About Us</a></li>          
+                    <li><Link to="/home">Home</Link></li>
+                    <li><Link to="/about">About Us</Link></li>          
                     <li><Link to="/availablebus">Available Buses</Link></li>
-                    <li><a href="/account">My Account</a></li>
+                    <li><Link to="/account">My Account</Link></li>
                     <li><Link to="/review">Reviews</Link></li>
                 </ul>
             </nav>
