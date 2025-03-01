@@ -1,0 +1,38 @@
+#list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.imageContainer {
+    background: url("../Mycomponents/busimage.webp") no-repeat center center/cover;
+    border: 5px solid white;
+    height: 125px;
+    width: 125px;
+    border-radius: 15px;
+}
+
+#list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    width: 25%;
+    border: 2px solid green;
+    background-color: aliceblue;
+}
+
+#heading2 {
+    text-align: center;
+    color: green;
+    margin-top: 50px;
+}
+
+#list li button {
+    width: 100%;
+}

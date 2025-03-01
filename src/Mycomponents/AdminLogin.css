@@ -1,0 +1,22 @@
+.AdminLoginContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url("../Mycomponents/background.webp") no-repeat center center/cover;
+}
+
+.AdminLoginContainer form {
+    width: 32%;
+}
+
+.AdminLoginContainer form input {
+    width: 97%;
+}
+
+.AdminLoginContainer form h2 {
+    text-align: center;
+    color: hotpink;
+    font-size: 30px;
+    margin-bottom: 32px;
+}
