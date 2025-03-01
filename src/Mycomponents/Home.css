@@ -107,10 +107,8 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: url('https://source.unsplash.com/1600x600/?bus,travel') no-repeat center center/cover;
-    color: white;
+    color: darkcyan;
     padding: 50px 20px;
-    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); */
 }
 
 .hero h2 {

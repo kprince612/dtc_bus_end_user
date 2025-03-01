@@ -1,11 +1,10 @@
-.account-container {
+/* .account-container {
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
     text-align: center;
 }
 
-/* Navbar styling */
 nav {
     background: #007bff;
     padding: 10px;
@@ -35,7 +34,6 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Form styling */
 form {
     background: white;
     padding: 20px;
@@ -81,7 +79,6 @@ button:hover {
     background: #0056b3;
 }
 
-/* Bookings list styling */
 ul {
     list-style: none;
     padding: 0;
@@ -101,13 +98,11 @@ li p {
     color: #333;
 }
 
-/* Dotted line between bookings */
 hr {
     border: 1px dotted #007bff;
     margin-top: 10px;
 }
 
-/* Message for no bookings */
 .no-bookings {
     font-size: 18px;
     color: #888;
@@ -118,4 +113,179 @@ hr {
 #heading {
     font-size: 36px;
     color: rgb(255 52 180);
+} */
+
+.account-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Navbar styling */
+nav {
+    background: #007bff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 10px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Form styling */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    animation: slideUp 0.8s ease-in-out;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+input:focus {
+    box-shadow: 0 0 5px #007bff;
+    border-color: #007bff;
+}
+
+button {
+    width: 100%;
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Bookings list styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
+
+/* Message for no bookings */
+.no-bookings {
+    font-size: 18px;
+    color: #888;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .account-container {
+        width: 90%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
+
+#heading {
+    font-size: 40px;
+    color: darkcyan;
+}
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

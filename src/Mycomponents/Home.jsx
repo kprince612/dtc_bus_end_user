@@ -42,7 +42,6 @@ function Home() {
     <div className="home-container">
       {/* Navigation Bar */}
       <nav className="navbar">
-        <h1 className="logo">EasyBus</h1>
         <ul className="nav-links">
           <li><Link to="/home">Home</Link></li>
           <li><Link to="/about">About Us</Link></li>
