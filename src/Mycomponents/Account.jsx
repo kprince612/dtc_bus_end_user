@@ -70,7 +70,7 @@ function Account() {
             </nav>
         <div className='account-container'>
 
-            <h2 id='heading'>Previous Orders</h2>
+            <h2 id='heading'>Previous Bus Bookings</h2>
 
             {book === false && (
 
