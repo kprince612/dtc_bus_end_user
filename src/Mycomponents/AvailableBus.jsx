@@ -14,7 +14,7 @@ function AvailableBus() {
         // e.preventDefault ();
 
         try {
-            const response = await axios.post ("http://127.0.0.1:5000/api/fetchbusdata");
+            const response = await axios.post ("https://dtc-bus-backend-1.onrender.com/api/fetchbusdata");
 
             if (response.status === 200) {
                 handleSuccess ("this is the available buses");

@@ -27,7 +27,7 @@ function Addbus() {
         }
 
         try {
-            const response = await axios.post ("http://127.0.0.1:5000/api/addbusdata", addbus);
+            const response = await axios.post ("https://dtc-bus-backend-1.onrender.com/api/addbusdata", addbus);
             console.log ("add bus data saved:", response.data);
 
             setAddBus ({

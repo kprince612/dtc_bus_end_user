@@ -160,7 +160,7 @@ function AdminData() {
       setBooks(true);
 
       const response = await axios.post(
-        `http://127.0.0.1:5000/api/fetchData/${selectedOption}`,
+        `https://dtc-bus-backend-1.onrender.com/api/fetchData/${selectedOption}`,
         { [selectedOption]: inputValue }
       );
 
