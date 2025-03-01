@@ -146,16 +146,16 @@ function Booking() {
         <ul>
           <li>
             {" "}
-            <a href="/home">Home</a>
+            <Link to="/home">Home</Link>
           </li>
           <li>
-            <a href="/about">About Us</a>
+            <Link to="/about">About Us</Link>
           </li>
           <li>
-            <a href="/availablebus">Available Bus</a>
+            <Link to="/availablebus">Available Buses</Link>
           </li>
           <li>
-            <a href="/account">My Account</a>
+            <Link to="/account">My Account</Link>
           </li>
           <li><Link to="/review">Reviews</Link></li>
         </ul>
