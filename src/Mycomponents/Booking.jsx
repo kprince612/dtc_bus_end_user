@@ -5,7 +5,7 @@ import "./Booking.css";
 import { ToastContainer } from "react-toastify";
 import { handleError, handleSuccess } from "../utils";
 import { useReactToPrint } from 'react-to-print';
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 function Booking() {
   const location = useLocation ();
@@ -25,6 +25,8 @@ function Booking() {
   const [ticketId, setTicketId] = useState("");
 
   const qrRef = useRef();
+
+  const navigate = useNavigate ();
 
   const sendBookingInfo = async () => {
     if (!bookingData.email.trim()) {
@@ -103,11 +105,6 @@ function Booking() {
           id: newticketId,
         });
 
-        if (response.status === 409) {
-          handleError("login first, then book ticket");
-          return;
-        }
-
         console.log("booking saved", response.data);
 
         setQrcodeData(JSON.stringify(qrCodeData));
@@ -127,10 +124,17 @@ function Booking() {
         sendBookingInfo();
         console.log(qrCodeData);
       } catch (err) {
-        handleError(
-          "error in booking ticket, or sign in first then book ticket"
-        );
-        console.log("error in ticket booking:", err);
+        if (err.response && err.response.status === 409) {
+          handleError ("you does not have account, please sign up");
+          setTimeout (() => {
+            navigate ("/signup");
+          }, 2000)
+        }
+
+        else {
+          handleError("error in booking ticket");
+          console.log("error in ticket booking:", err);
+        }
       }
     }
   };
